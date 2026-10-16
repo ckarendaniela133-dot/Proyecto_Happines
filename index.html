@@ -1,113 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>The Happy Stars</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <header class="cabecera">
-        <a href="#" class="logo-cabacera">
-            <img src="assets/logo.png" alt="the happy" class="logo imagen" </a>
-            <nav class="menu-navegacion">
-                <ul class="enlaces menu">
-                    <li><a href="#">Hapiness</a></li>
-                    <li><a href="#">Books</a></li>
-                    <li><a href="#">About us</a></li>
-                    <li><a href="#">Contac</a></li>
+    <header class="topbar">
+        <div class="topbar-inner">
+            <a href="#inicio" class="brand">
+                <img src="assets/logo.png" alt="The Happy Stars">
+            </a>
 
-                </ul>
+            <nav>
+                <a href="#inicio">HOME</a>
+                <a href="#happiness">HAPPINESS</a>
+                <a href="#team">OUR TEAM</a>
+                <a href="#method">METHOD</a>
+                <a href="#contact">CONTACT</a>
             </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-imagen">
-            <img src="assets/img01.png" alt="imagen1">
-        </div>
-        <div class="hero-texto">
-            <h1>HOW HAPPY ARE YOU?</h1>
-            <P>Lorem ipsum dolor sit amet,consectetur
-                adipiscig elit, sed do eiusmod tempor
-                incididunt uut labore et dolore magna aliquia.
-                Quis ipsum suspendisse ultrices gavida
-                risus comodo viverra maecenas
-            </P>
-            <a href="#" class="btn btn-amarillo">Read more</a>
+    <main>
+
+        <section class="hero" id="inicio">
+            <div class="hero-card">
+                <img class="hero-photo" src="assets/img01.png"
+                     alt="Personas trabajando en equipo">
+
+                <div class="hero-copy">
+                    <h1>HOW HAPPY<br>ARE YOU?</h1>
+                    <p>Discover your happiness and find the way to improve it.</p>
+                    <a href="#happiness" class="yellow-button">DISCOVER</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-section" id="happiness">
+            <div class="stats-card">
+                <div class="stats-heading">
+                    <h2>HAPPINESS<br>&amp; NUMBERS</h2>
+                    <p>Understand your happiness through simple facts and figures.</p>
+                </div>
+
+                <img src="assets/graph01.png" alt="Gráfico de porcentajes">
+                <img src="assets/graph02.png" alt="Gráfico de felicidad">
+            </div>
+        </section>
+
+        <section class="yellow-feature">
+            <div class="feature-inner">
+                <div class="feature-copy">
+                    <h2>WE CAN HELP YOU<br>TO BE HAPPY</h2>
+                    <p>Small changes and better connections can make a big difference.</p>
+                    <a href="#method" class="dark-button">LEARN MORE</a>
+                </div>
+
+                <img src="assets/img02.png" alt="Personas colaborando">
+            </div>
+        </section>
+
+        <section class="happiness-section">
+            <div class="happiness-card">
+                <img src="assets/img03.png" alt="Personas conversando">
+
+                <div class="happiness-copy">
+                    <h2>IT'S ALL ABOUT<br>HAPPINESS</h2>
+                    <p>Listen, share, and build positive relationships every day.</p>
+                    <a href="#team" class="yellow-button">OUR APPROACH</a>
+                </div>
+
+                <img class="small-chart" src="assets/graph01.png"
+                     alt="Estadísticas de felicidad">
+            </div>
+        </section>
+
+        <section class="dark-photo">
+            <h2>ABOUT US</h2>
+            <img src="assets/img01.png" alt="Nuestro equipo">
+            <a href="#team" class="yellow-button">MEET THE TEAM</a>
+        </section>
+
+        <!-- EQUIPO -->
+        <section class="team-section" id="team">
+            <div class="team-card">
+                <img src="assets/img04.png" alt="Equipo de trabajo">
+
+                <div>
+                    <h2>OUR TEAM</h2>
+                    <p>
+                        We are a team that believes collaboration and
+                        communication help people thrive.
+                    </p>
+                    <a href="#contact" class="yellow-button">CONTACT US</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="method-section" id="method">
+            <div class="method-card">
+                <div class="method-copy">
+                    <h2>TRY OUR METHOD<br>FOR FREE</h2>
+                    <p>Take the first step toward a happier and more connected life.</p>
+                    <a href="#contact" class="yellow-button">TRY IT NOW</a>
+                </div>
+
+                <img src="assets/img05.png" alt="Conversación entre personas">
+            </div>
+        </section>
+
+        <section class="newsletter">
+            <div class="newsletter-card">
+                <form>
+                    <h2>SUBSCRIBE TO<br>OUR NEWSLETTER</h2>
+
+                    <label for="name">Name</label>
+                    <input type="text" id="name" placeholder="Your name">
+
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Your email">
+
+                    <button type="submit">SUBSCRIBE</button>
+                </form>
+
+                <div class="newsletter-copy">
+                    <h2>SUBSCRIBED TO<br>OUR NEWSLETTER</h2>
+                    <p>Receive ideas and updates to help you keep moving forward.</p>
+                    <a href="#contact" class="dark-button">SUBSCRIBE</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contact">
+            <h2>CONTACT</h2>
+
+            <img class="map" src="assets/map.png" alt="Mapa de ubicación">
+
+            <a href="mailto:hello@thehappystars.example"
+               class="dark-button">CONTACT US</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-main">
+            <img src="assets/logoWhite.png" alt="The Happy Stars">
+
+            <div>
+                <h3>THE HAPPY STARS</h3>
+                <p>Be happy. Be connected.</p>
+            </div>
+
+            <div>
+                <h3>CONTACT</h3>
+                <p>hello@thehappystars.example</p>
+                <p>Monday - Friday</p>
+            </div>
+
+            <div class="socials">
+                <img src="assets/Facebook.png" alt="Facebook">
+                <img src="assets/Facebook copy.png" alt="Facebook">
+            </div>
         </div>
 
-    </section>
+        <p class="copyright">
+            © The Happy Stars. All rights reserved.
+        </p>
+    </footer>
 
-    <section class="numeros">
-        <div class="contenedor-numeros">
-            <h2>HAPPINESS IN NUMBERS</h2>
-            <p> Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit,
-                sed do eiusmod tempor incididunt ut</p>
-            <a href="#" class="enlace-mas">Read More ></a>
-        </div>
-        <div class="graficos">
-            <div class="grafico-pastel">
-                <img src="assets/graph01.png" alt="grafico circular">
-            </div>
-            <div class="grafico-medidor">
-                <img src="assets/graph02.png" alt="medidor">
-            </div>
-        </div>
-        </div>
-    </section>
-
-    <section class="ayuda">
-        <div class="ayuda-contenido">
-            <div class="ayuda-texto">
-                <h2>WE CAN HELP YOU TO BE HAPPY</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur
-                    adipiscing elit, sed do eiusmod tempor
-                    incididunt ut labore et dolore magna aliqua.
-                    Quis ipsum suspendisse ultrices gravida. Risus
-                    commodo viverra maecenas accumsan lacus vel </p>
-                <a href="#" class="btn btn-negro">Read More</a>
-            </div>
-            <div class="ayuda-imagen">
-                <img src="assets/img02.png" alt="manos">
-            </div>
-        </div>
-    </section>
-
-    <section class="porcentaje">
-        <div class="porcentaje2">
-            <h2> % HAPPINESS</h2>
-            <p> Lorem ipsum dolor sit amet, consectetur
-                adipiscig elit, sed do eiusmod tempor
-                incididunt ut labore et dolore magna aliqua.
-                quis ipsum suspendise ultrices gravida.
-                Risus commodo viverra maecenas </p>
-            <a href="#" class="btn btn-negro">Read More</a>
-            <div class="amigos felices">
-                <img src="assets/img03.png" alt="amigos">
-            </div>
-            <div class="porcentaje circular">
-                <img src="assets/graph01.png" alt="porcentaje">
-            </div>
-        </div>
-    </section>
-
-    <section class="about">
-        <div class="us">
-        <h3> ABOUT US</h3>
-        <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            Ut enim ad minim veniam,</p>
-        <div class="amigos comptador">
-                <img src="assets/img01.png" alt="computador">
-        </div>  
-         <a href="#" class="btn btn-amarillo">Read more</a>
-        </div>    
-
-        </div> 
-    </section>
 </body>
-
 </html>
